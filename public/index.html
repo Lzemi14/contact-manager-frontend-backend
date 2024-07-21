@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contact Manager</h1>
+    <div class="container">
+        <div id="login-section">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+        <div id="register-section">
+            <h2>Register</h2>
+            <input type="text" id="register-username" placeholder="Username">
+            <input type="email" id="register-email" placeholder="Email">
+            <input type="password" id="register-password" placeholder="Password">
+            <button onclick="register()">Register</button>
+        </div>
+       
+    </div>
+    <div class="container1">
+        <div id="contact-section" style="display: none;">
+            <h2>Contacts</h2>
+            <div id="contacts-list"></div>
+            
+            <button onclick="showCreateForm()">+ Create Contact</button>
+            <div id="contact-actions" style="display: none;">
+                <button onclick="deleteContact()">- Delete Contact</button>
+                <button onclick="updateContactForm()">Update Contact</button>
+            </div>
+            <div id="create-update-form" style="display: none;">
+                <input type="text" id="contact-name" placeholder="Name">
+                <input type="email" id="contact-email" placeholder="Email">
+                <input type="tel" id="contact-phone" placeholder="Phone">
+                <button id="save-contact-btn">Save Contact</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
